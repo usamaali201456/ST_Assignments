@@ -54,7 +54,8 @@ public class Add_CandidateNGTest {
         test.SetText3(address);
         test.SetText4(Dob);
         int value=test.Perform();
-        Assert.assertEquals(1, value);
+        Assert.assertEquals(1, value);// return successful when Add Successful
+        
     }
     @Parameters({ "CNIC","Name","Address","DOB" })
     @Test
@@ -67,7 +68,8 @@ public class Add_CandidateNGTest {
         test.SetText3(address);
         test.SetText4(Dob);
         int value=test.Perform();
-        Assert.assertEquals(0, value);
+        Assert.assertEquals(0, value); // return successful when Add failed
+        
     
 }
 }
