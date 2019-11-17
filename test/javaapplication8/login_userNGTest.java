@@ -203,7 +203,7 @@ public class login_userNGTest {
     public void testclickcancel()
     {
        
-       Assert.assertEquals(msg4, myobj.onClickCancel() );
+       Assert.assertEquals(msg4, myobj.onClickCancel());
        
     }
    
